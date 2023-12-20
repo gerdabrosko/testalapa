@@ -1,111 +1,22 @@
-<!DOCTYPE html>
-<html lang="lv">
-<head>
-  <body style="background-color:powderblue;"></body>
-  <meta charset="utf-8">
+<!doctype html>
+<html lang="lv"><head><meta charset="utf-8">
+  
   <title>Mājaslapa</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script>
-
-function raditsaturu() {
-        document.getElementById("RādamaisSaturs").style.display = "block";
-        document.getElementById("PogaRaadiit").style.display = "none";
-      }
-      function pasleptsaturu() {
-        document.getElementById("RādamaisSaturs").style.display = "none";
-        document.getElementById("PogaRaadiit").style.display = "block";
-      }
-      function mainaBildes() {
-  var bilde = document.getElementById("bilde1");
-  if (bilde.src.includes("https://production.listennotes.com/podcasts/pieci-r%C4%ABti/r%C4%ABts-kad-spo%C5%BEi-sp%C4%ABd%C4%93ja-saule-pfD6YejEM7O-vLrQ0fgTEyD.600x400.jpg")) {
-    bilde.src = "https://lastatic.ams3.cdn.digitaloceanspaces.com/2018/10/rits_rudens_saule.jpg";
-  } else {
-    bilde.src = "https://lat.grani.lv/uploads/posts/2017-06/1497934393_-.jpg";
-  }
-}
-function mainaas() {
-  var mainasTeksts = document.getElementById("mainasTeksts");
-  if (mainasTeksts.innerHTML.trim() === "Pirmie saules stari nelielās, zeltainās sprauslās caur debesīm izspīd mākoņus, sniedzot tiem siltumu un krāsu. Šajā brīdī visa apkārtne top dzīva – putni sāk savu koncertu, zeme pamazām atklāj savus krāšņos toņus, un cilvēki klusēti izbauda saules atnākšanu. Rīta saule ir kā neparasts mirklis, kas mūs aicina ieskatīties jaunā dienā ar jaunu skatījumu un cerību.") {
-    mainasTeksts.innerHTML = " Pirmie saules stari nelielās, zeltainās sprauslās caur debesīm izspīd mākoņus, sniedzot tiem siltumu un krāsu. Šajā brīdī visa apkārtne top dzīva – putni sāk savu koncertu, zeme pamazām atklāj savus krāšņos toņus, un cilvēki klusēti izbauda saules atnākšanu. Rīta saule ir kā neparasts mirklis, kas mūs aicina ieskatīties jaunā dienā ar jaunu skatījumu un cerību.";
-  } else {
-  }
-}
-  </script>
+  
   <style>
     body {
-      background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fmeiravietis.typepad.com%2Fphotos%2Fsaite%2Fr%25C4%25ABta-saule-virs-ezera-10-oktobr%25C4%25AB.html&psig=AOvVaw16Sv96WK-oss2d0HVmroGQ&ust=1703157971692000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPCxyIH0nYMDFQAAAAAdAAAAABAD');
+      background-image: url(https://files.123freevectors.com/wp-content/original/147157-abstract-pink-blurred-bokeh-background-image.jpg);
       background-size: cover;
     }
-    p, ol, h3, h4, h1, h2, a, button {
-      background-color: rgb(247, 252, 175);
+    p,ol,h3,h4,h1,h2,a button {
+      background-color: rgb(255, 217, 248);
     }
     #RādamaisSaturs {
       display: none;
     }
   </style>
-</head>
-<body>
-  <div class="container" text-center left-sided>
-    <div class="row">
-      <div class="col-9">
-          <h1 class="rounded-5 p-2" #text-336x57>Rīta saule</h1>
-      </div>
-      <div class="col-4" text-center left-sided><br> 
-          <h2 class="rounded-5 p-2" #text-336x54>Daba</h2>
-        </div>
-        <div class="row justify-content-around" left-sided 336x384>
-          <div class="col-4">
-       p class="rounded-5 p-5" #text-471x566>  <
-            Rīta saule paceļas lēnām pār horizontu, sildot pasauli ar saviem mīkstajiem staru spīdumiem. Viņas pirmie stari mirdz cauri debesīm, pārveidojot tumsu par maigo gaismu, kas klusām klīst pār ainavu. Šajā brīnumainajā mirklī viss top dzīvs – zeme pamazām atgūst savu krāsu un dzīvnieki sāk savu dienas ritmu. Rīta saule ir kā skaista atsākuma simbols, kas pavada mūs ar siltumu un cerību katru rītu.
-          </p>
-          </div>
-        </div>
-          <button class="rounded-5 p-2" id="PogaRaadiit" onclick="raditsaturu()" style="display: block;">Vairāk</button>
-          <div id="RādamaisSaturs">
-            <p class="rounded-5 p-2"left-sided 336x384> 
-              Pirmie saules stari nelielās, zeltainās sprauslās caur debesīm izspīd mākoņus, sniedzot tiem siltumu un krāsu. Šajā brīdī visa apkārtne top dzīva – putni sāk savu koncertu, zeme pamazām atklāj savus krāšņos toņus, un cilvēki klusēti izbauda saules atnākšanu. Rīta saule ir kā neparasts mirklis, kas mūs aicina ieskatīties jaunā dienā ar jaunu skatījumu un cerību. 
-            </p>
-            <button class="rounded-5 p-2" onclick="raditsaturu()">mazāk</button>
-          </div>
-          <div class="col" right-sided>
-            <img id="bilde1" src="https://production.listennotes.com/podcasts/pieci-r%C4%ABti/r%C4%ABts-kad-spo%C5%BEi-sp%C4%ABd%C4%93ja-saule-pfD6YejEM7O-vLrQ0fgTEyD.600x400.jpg" class="img-fluid" alt="skati">
-            <button class="rounded-5 p-3" onclick="mainaBildes()">Maina bildi</button>
-            <h3 class="rounded-5 p-2">Tabula</h3>
-            <table class="table table-success table-striped">
-              <style>
-                table, th, td {
-                  border: 1px solid green; border-style: dotted;
-                  border-collapse: collapse;
-                }
-              </style>
-              <tbody>
-                <tr>
-                  <th>1.</th>
-                  <th>2.</th>
-                  <th>3.</th>
-                  <th>4.</th>
-                </tr>
-                <tr>
-                  <td>been</td>
-                  <td>there</td>
-                  <td>done</td>
-                  <td>that</td>
-                </tr>
-              </tbody>
-            </table>
-            <h4 class="rounded-5 p-2">Pitbull songs</h4>
-            <ol class="rounded-5 p-5">
-              <li>Fireball</li>
-              <li>Time of Our Lives</li>
-              <li>Hotel Room Service</li>
-            </ol>
-            <a href="https://www.rag.lv/" class="rounded-5 p-2">raģ mājaslapa</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <script>
     function raditsaturu() {
       document.getElementById("RādamaisSaturs").style.display = "block";
@@ -116,21 +27,77 @@ function mainaas() {
       document.getElementById("PogaRaadiit").style.display = "block";
     }
     function mainaBildes() {
-      var bilde = document.getElementById("bilde1");
-      if (bilde.src.includes('https://production.listennotes.com/podcasts/pieci-r%C4%ABti/r%C4%ABts-kad-spo%C5%BEi-sp%C4%ABd%C4%93ja-saule-pfD6YejEM7O-vLrQ0fgTEyD.600x400.jpg')) {
-        bilde.src = 'https://lastatic.ams3.cdn.digitaloceanspaces.com/2018/10/rits_rudens_saule.jpg';
-      } else {
-        bilde.src = 'https://lat.grani.lv/uploads/posts/2017-06/1497934393_-.jpg';
-      }
-    }
-    function mainaas() {
-      var mainasTeksts = document.getElementById("mainasTeksts");
-      if (mainasTeksts.innerHTML.trim() === "Your condition here") {
-        mainasTeksts.innerHTML = "Your change here";
-      } else {
-        mainasTeksts.innerHTML = "Your else statement here";
-      }
-    }
+var bilde = document.getElementById("bilde1");
+if (bilde.src.includes("https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg")) {
+  bilde.src = "https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg";
+} else {
+  bilde.src = "https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg";
+}
+}
+function mainaas() {
+var mainasTeksts = document.getElementById("mainasTeksts");
+if (mainasTeksts.innerHTML.trim() === "Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. Divkāršu apziedni veido vainaglapas un kauslapas. Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni. Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu") {
+  mainasTeksts.innerHTML = "Latviešiem īrisi patīk – ne velti mūsu selekcionāru, kolekcionāru un amatieru dārzos ir apzināts vismaz tūkstoš bārdaino īrisu šķirņu! Pasaulē to ir desmitiem tūkstošu, un arī Latvijā parādās arvien jaunas šķirnes.";
+} else {
+  mainasTeksts.innerHTML = "Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. Divkāršu apziedni veido vainaglapas un kauslapas. Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni. Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu";
+}
+}
   </script>
-</body>
-</html>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h1 class="rounded-5 p-2">''Virsraksts''</h1>
+          p,ol,h3,h4,h1,h2,a button {
+      background-color: rgb(255, 217, 248);
+    }
+    #RādamaisSaturs {
+      display: none;
+    }
+          <button class="rounded-5 p-2" id="PogaRaadiit" onclick="raditsaturu()" style="display: block;">Rādīt vairāk</button>
+          <div id="RādamaisSaturs" style="display: none;">
+            <p class="rounded-5 p-2">
+              Sinonīms vārdam "zieds" ir puķe, lai gan precīzāk ar šo apzīmējumu apzīmē ziedu ar kātu un lapām.
+            </p>
+            <button class="rounded-5 p-2" onclick="pasleptsaturu()">Rādīt mazāk</button>
+          </div>
+          <p class="rounded-5 p-4" id="mainasTeksts">
+            Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. 
+            Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. 
+            Divkāršu apziedni veido vainaglapas un kauslapas. 
+            Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni.
+             Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu
+          </p>
+          <button class="rounded-5 p-3" onclick="mainaas()">Mainīt tekstu</button>
+        </div>
+        <div class="col">
+          <img id="bilde1" src="https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" class="img-fluid" alt="ziedi">
+          <button class="rounded-5 p-3" onclick="mainaBildes()">Mainīt bildi</button>
+          <h3 class="rounded-5 p-2">Ziedi cilvēces vēsturē un kultūrā</h3>
+          <table class="table table-dark table-hover">
+            <style>
+              table,
+              th,
+              td {
+                border: 1px solid black;
+                border-collapse: collapse;
+              }
+            </style>
+            <tbody><tr>
+              <th>viens</th>
+              <th>divi</th>
+              <th>trīs</th>
+            </tr>
+            <tr>
+              <td>četri</td>
+              <td>pieci</td>
+              <td>seši</td>
+            </tr>
+          </tbody></table>
+          <a href="https://www.rag.lv/" class="rounded-5 p-2"> raģ.lv</a>
+          <h4 class="rounded-5 p-2">Saraksts</h4>
+          <ol class="rounded-5 p-5">
+            <li>jā</li>
+            <li>nē</li>
